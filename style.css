@@ -1,0 +1,324 @@
+
+:root{
+    --darkgray: #1d252c;
+    --lightgray: #fafafa;
+    --grayiest: #1b2127;
+    --ligthblue: #026fff;
+
+}
+html
+{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+li
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+figure
+{
+    margin: 0;
+}
+body
+{
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 1.7rem;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "fjalla one", sans-serif;
+    font-weight: normal; /* tapuen puede ser 400 = normal o bold = 700 */
+    letter-spacing: -.2px;
+}
+h1{
+    font-size: 4rem;
+    line-height: 1.5; /* esto es porcentajes, es decir 150% */
+    color: white;
+    margin: 0;
+    
+}
+h1 strong
+{
+    color:var(--ligthblue);
+}
+.header
+{
+    display: flex;
+    width: 100%;
+    background-color: var(--darkgray);
+    align-items: center; 
+    justify-content: space-between;
+}
+.header .header__logoContainer .header__logo
+{
+    vertical-align: top;
+}
+.nav-list
+{
+    display: flex;
+}
+li
+{
+    margin: 0 15px;
+    
+}
+.nav-list li a
+{
+    color: white;
+}
+.hero
+{
+    display: flex;
+    
+    justify-content: space-between;
+    height: 300px;
+    background-color: var(--darkgray);
+}
+.hero h1
+{
+    margin: 15px;
+}
+.hero .hero__imageContainer
+{
+    width: 500px;
+}
+.hero .hero__imageContainer img
+{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+.portfolio
+{
+    background-color: var(--lightgray);
+    
+    padding: 20px;
+}
+.portfolio .portfolio__title
+{
+    color: var(--ligthblue);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.project
+{
+    border: 1px solid gray;
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+    background: white;
+    justify-content: space-around;
+}
+
+.project .section1
+{
+    width: 100%;
+}
+.project .section1 .project__title
+{
+    font-size: 3rem;
+    margin: 10px 0;
+}
+.project .section1 .project__curse ,.project__date, .project__url
+{
+    margin: 10px 0;
+}
+.project .section1 .project__description
+{
+    font-size: 2rem;
+}
+.project strong
+{
+    font-family: "fjalla one", sans-serif;
+}
+.project .section2
+{
+    width: 100%;
+}
+
+.project .section2 img
+{
+    width: 100%;
+    
+}
+.eventMainContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    
+}
+.eventMainContainer__title
+{
+    margin-top:0;
+    padding-left: 20px;
+}
+.event
+{
+    width: 46.5%;
+    height: 400px;
+    flex-shrink: 0; /* para que no se enconjan los items */
+    overflow: hidden; /* cool */
+    border-radius: 8px;
+    margin: 15px;
+    position: relative;
+    background-color: #f4fbff;
+     
+}
+.event .event__detail
+{
+    width: 90%;
+    margin: 0 auto;
+    background-color:white;
+    position: absolute;
+    bottom:-60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    padding: 15px; 
+}
+
+.event .event__detail .event__title
+{
+    text-align: center;
+}
+.event .event__detail .event__url
+{
+    display: block;
+    text-align: center;
+    border: 1px var(--ligthblue) solid;
+    width: 100px;
+    padding: 13px;
+    margin: 0 auto;
+    
+}
+.event img
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkgray);
+    margin-top: 15px;
+    padding: 10px;
+    margin: 0px;
+}
+.footer p
+{
+    color: white;
+}
+.footer .platziCredits
+{
+    display: flex;
+    align-items: center;
+}
+
+.footer .platziCredits img
+{
+    height: 50px;
+    vertical-align: top;
+}
+.footer .developerCredits
+{
+    display: flex;
+    align-items: center;
+}
+.footer .developerCredits a
+{
+    color: royalblue;
+}
+.contact
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--ligthblue);
+    color: white;
+    height: 150px;
+    align-items: center;
+    padding: 15px;
+}
+
+.social .social-link
+{
+    display: inline-block;
+    width: 50px;
+    height:50px;
+    background-size: cover;
+    vertical-align: top;
+    margin: 0 10px;
+}
+.social .facebook
+{   
+    background-image: url("./images/facebook.svg");
+    
+}
+.social .twitter
+{   
+    background-image: url("./images/twitter.svg");
+    
+}
+.social .github
+{   
+    background-image: url("./images/github.svg");
+    
+}
+.social .instagram
+{   
+    background-image: url("./images/instagram.svg");
+    
+}
+.form__email input
+{
+    border: none;
+    outline: none;
+    color: gray;
+    background-image: url("./images/envelope.svg");
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-position-x: 5px;
+    background-position-y: 14px;
+    background-size: 15px 15px;
+    padding: 10px 20px 10px 25px;
+
+}
+.form__email button
+{
+    display: block;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 40px;
+    border: 1px solid white;
+}
+.form__email h3
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container
+{
+
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
