@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"><!-- para añadir un icono  -->
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon"><!-- para añadir un icono  -->
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css" media="(max-width: 940px)">
+
 </head>
 <body>
     <header class="header">
-        <div class="container"><!-- wrapper o container -->
+        <!-- wrapper o container -->
             <figure class="header__logoContainer">
                 <picture class="header__logo">
                     <source media="(max-width:950px)" srcset="./images/logo-small.jpg" />
-                    <img src="./images/logo.png" alt="">
+                    <img src="./images/logo-header2.png" alt="">
                 </picture>
             </figure>
             <nav class="nav">
@@ -26,143 +30,120 @@
                     <li> <a class="nav__link" href="#contacto">Trabajemos Juntos</a></li>
                 </ul>
             </nav>
-        </div>
+       
     </header>
     <section class="hero">
-        <div class="container">
-            <h1 class="hero__title">Hola soy <strong> Alexis Valderrama</strong> <br> desarrollador <strong>javascript</strong> con <br> pasion por la <strong>enseñaza</strong></h1>
+        
+            <h1 class="hero__title">Hola soy <strong> Alexis Valderrama</strong> <br> desarrollador <strong>JavaScript</strong> con <br> pasión por el <strong>Desarrollo Web</strong></h1>
             <figure class="hero__imageContainer">
-                <img src="./images/hero.jpg" alt="">
+                <img src="./images/profile.png" alt="">
             </figure>
-
-        </div>
+        
     </section>
     <section class="portfolio" id="portafolio"> 
-        <div class="container">
+        
             <h2 class="portfolio__title">PORTAFOLIO (PROYECTOS DESTACADOS)</h2>
             <article class="project">
                 <div class="section1">
-                    <h3 class="project__title">Platzi Video</h3>
-                    <h6 class="project__curse">React Native / React</h6>
-                    <p class="project__date"><strong>Fecha:</strong> <small> 01/07/2018</small></p>
-                    <p class="project__url"><strong>Puedes verlo en:</strong> <small> www.platzi.com/native</small></p>
-                    <p class="project__description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.</p>
+                    <h3 class="project__title">HOODBIT</h3>
+                    <h6 class="project__curse">HTML/CSS/Javascript</h6>
+                    <p class="project__date"><strong>Fecha:</strong> <small> 01/03/2021</small></p>
+                    <p class="project__url"><strong>Puedes verlo en:</strong><b><a href="https://alexis-vg.github.io/hoodbit-alexisvg/" target="_blank">Hoodbit</a></b></p>
+                    <p class="project__description">
+                        El objetivo era realizar una landing page 100% responsive de una plataforma de venta de planes de criptomonedas, con las secciones de: Logo, Conócenos, Productos, Planes, Redes sociales</p>
                 </div>
                 
                 <div class="section2">
                     <figure class="project__imageContainer" style="margin:0;">
-                        <img class="project__image" src="./images/platzi-video-react-native.png" alt="">
+                        <img class="project__image" src="./images/responsive_mockup_hoodbit.png" alt="">
                     </figure>
                 </div>
             </article>
-        </div>
+        
     </section>
     <section class="portfolio" id="portafolio"> 
-        <div class="container">
+        
             <article class="project">
                 <div class="section1">
-                    <h3 class="project__title">Platzi Video</h3>
-                    <h6 class="project__curse">React Native / React</h6>
+                    <h3 class="project__title">PLATZI VIDEO</h3>
+                    <h6 class="project__curse">HTML/CSS/Javascript</h6>
                     <p class="project__date"><strong>Fecha:</strong> <small> 01/07/2018</small></p>
-                    <p class="project__url"><strong>Puedes verlo en:</strong> <small> www.platzi.com/native</small></p>
-                    <p class="project__description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.</p>
+                    <p class="project__url"><strong>Puedes verlo en:</strong><b><a href="https://alexis-vg.github.io/platzivideo/" target="_blank">PlatziVideo</a></b></p>
+                    <p class="project__description">
+                        El objetivo era realizar un layout 100% responsive de una plataforma de video que tuviera un sección de comentarios, perfiles de usuario, tipos de música y sugerencias
+                        Logro principal
+                        Se logró realizar el layout en su mayoría con Css Grid Layout. Se logró un diseño 100% responsive. Se hizo uso de buenas prácticas. Se realizó auditoria con lighthouse, Se realizo un layout fiel al diseño inicial.</p>
                 </div>
                 
                 <div class="section2">
                     <figure class="project__imageContainer" style="margin:0;">
-                        <img class="project__image" src="./images/platzi-video-react-native.png" alt="">
+                        <img class="project__image" src="./images/responsive-mockup-platzivideo.png" alt="">
                     </figure>
                 </div>
             </article>
-        </div>
+        
     
     </section>
-    <div class="container">
-        <h2 class="eventMainContainer__title">MAS SOBRE MI EXPERIENCIA</h2>
-        <section class="eventMainContainer" id="eventos">
+    
+    <h2 class="eventMainContainer__title">MAS SOBRE MI EXPERIENCIA</h2>
+    <section class="eventMainContainer" id="eventos">
             
                 <article class="event">
                     <figure class="event__imageContainer">
-                        <img class="event__image" src="./images/platzi-conf.jpg" alt="" width="500px">
+                        <img class="event__image" src="./images/tool-clasiffier.png" alt="" width="500px">
                     </figure>
                     <div class="event__detail">
-                        <h3 class="event__title">PlatziConf México 2018</h3>
-                        <p class="event__description">El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de constante aprendizaje.</p>
-                        <a class="event__url" href="https://www.youtube.com/watch?v=61ESVVk4bNk" target="_blank">Ver Plática</a>
+                        <h3 class="event__title">Endurance Witness</h3>
+                        <p class="event__description">Robot para realizar inventario de objetos | Endurance Witness - Inventory Robot
+                        </p>
+                        <a class="event__url" href="https://www.youtube.com/watch?v=6FSuphWdQP0&ab_channel=AlexisValderrama" target="_blank">Ver Resultado</a>
                     </div>
                 </article>
                 <article class="event">
                     <figure class="event__imageContainer">
-                        <img class="event__image" src="./images/platzi-conf.jpg" alt="" width="500px">
+                        <img class="event__image" src="./images/calculator-v3d.png" alt="" width="500px">
                     </figure>
                     <div class="event__detail">
-                        <h3 class="event__title">PlatziConf México 2018</h3>
-                        <p class="event__description">El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de constante aprendizaje.</p>
-                        <a class="event__url" href="https://www.youtube.com/watch?v=61ESVVk4bNk" target="_blank">Ver Plática</a>
+                        <h3 class="event__title">Calculadora de costos para un negocio de manufactura aditiva</h3>
+                        <p class="event__description">Este es un programa instalable (.exe) que servirá para automatizar los costos de impresión 3d que se cobran al cliente.</p>
+                        <a class="event__url" href="https://youtu.be/F-uReX0pM_k" target="_blank">Ver Resultado</a>
                     </div>
                 </article>
                 <article class="event">
                     <figure class="event__imageContainer">
-                        <img class="event__image" src="./images/platzi-conf.jpg" alt="" width="500px">
+                        <img class="event__image" src="./images/logo eslogan2.png" alt="" width="500px">
                     </figure>
                     <div class="event__detail">
-                        <h3 class="event__title">PlatziConf México 2018</h3>
-                        <p class="event__description">El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de constante aprendizaje.</p>
-                        <a class="event__url" href="https://www.youtube.com/watch?v=61ESVVk4bNk" target="_blank">Ver Plática</a>
+                        <h3 class="event__title">Emprendimiento de Servicio de Impresion 3D</h3>
+                        <p class="event__description">En estos casi 2 años conseguí 12 clientes del sector metalúrgico, mecánico y  electrónico, +350 trabajos realizados, +430 piezas impresas.</p>
+                        <a class="event__url" href="https://youtu.be/F-uReX0pM_k" target="_blank">Ver Resultado</a>
                     </div>
                 </article>
-                <article class="event">
-                    <figure class="event__imageContainer">
-                        <img class="event__image" src="./images/platzi-conf.jpg" alt="" width="500px">
-                    </figure>
-                    <div class="event__detail">
-                        <h3 class="event__title">PlatziConf México 2018</h3>
-                        <p class="event__description">El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de constante aprendizaje.</p>
-                        <a class="event__url" href="https://www.youtube.com/watch?v=61ESVVk4bNk" target="_blank">Ver Plática</a>
-                    </div>
-                </article>
-                <article class="event">
-                    <figure class="event__imageContainer">
-                        <img class="event__image" src="./images/platzi-conf.jpg" alt="" width="500px">
-                    </figure>
-                    <div class="event__detail">
-                        <h3 class="event__title">PlatziConf México 2018</h3>
-                        <p class="event__description">El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de constante aprendizaje.</p>
-                        <a class="event__url" href="https://www.youtube.com/watch?v=61ESVVk4bNk" target="_blank">Ver Plática</a>
-                    </div>
-                </article>
+                
             
         </section>
     </div>
     <section class="contact" id="contacto">
-        <div class="container">
+        
             <form action="" class="form__email">
-                <h3>Creamos algo juntos?</h3>
-                <label for="email">
-                    <input type="email" id="email" name= "email" placeholder="Dejanos tu email">
-                </label>
-                <button>Enviar</button>
+                <h3><b> Creamos algo juntos?</b></h3>
+                <p> Escribeme a: alexis.svalderrama@gmail.com</p>
+                
             </form>
             <div class="social">
+                <a href="https://github.com/Alexis-vg" target="_blank" class="social-link github"></a>
                 <a href="#" class="social-link facebook"></a>
                 <a href="#" class="social-link twitter"></a>
-                <a href="#" class="social-link github"></a>
                 <a href="#" class="social-link instagram"></a>
             </div>
         </div>
     </section>
     <footer class="footer">
-        <div class="container">
-            <div class="platziCredits">
-                <p>Desarrollo web Online 2018</p>
-                <figure class="platziLogoContainer">
-                    <img src="./images/platzi.png" alt="">
-                </figure>
-            </div>
+        
             <div class="developerCredits">
-                <p>Designed by: <a href=""> Alexis Valderrama</a></p>
+                <p>Designed by: <a href="">Alexis Valderrama</a></p>
             </div>
-        </div>
+        
         
     </footer>
 </body>

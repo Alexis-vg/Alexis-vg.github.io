@@ -1,0 +1,28 @@
+.project {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+  background: white;
+  justify-content: space-around;
+}
+.event {
+  width: 46.5%;
+  height: 500px;
+  /* para que no se enconjan los items */
+  overflow: hidden; /* cool */
+
+  border-radius: 8px;
+  margin: 15px;
+  position: relative;
+  background-color: #f4fbff;
+  /* background-color: red; */
+}
+.eventMainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 50px;
+}
